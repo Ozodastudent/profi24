@@ -1,0 +1,98 @@
+
+header{
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 145px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul, li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.logo{
+    margin-right: 40px;
+}
+li{
+    margin-right:15px;
+}
+.nav_number{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #018780;
+    color: white;
+    font-size: 14px;
+}
+.lan{
+    width: 70px;
+    height: 50px;
+    background-color: #F8F8F8;
+    text-align: center;
+    border-radius: 40%;
+}
+.enter_btn{
+    width: 105px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: #018780;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated {
+    animation: fadeIn 1s ease-in-out forwards; /* Animation for the entire navbar */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+    animation: slideInRight 0.5s ease-in-out forwards; /* Slide-in animation for each nav item */
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .nav-item:hover {
+    animation: pulse 0.5s ease-in-out infinite alternate; /* Subtle pulse animation on hover */
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
